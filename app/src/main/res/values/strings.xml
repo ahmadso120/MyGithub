@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyGithub</string>
+
+    <string name="empty_state_title">Nothing to see here…</string>
+    <string name="no_search_results_subtitle">Try searching for something</string>
+    <string name="error_state_title">Ooops… something went wrong</string>
+    <string name="retry">Retry</string>
+</resources>

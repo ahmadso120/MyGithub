@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/keyline_7"
+        tools:text="android-architecture" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/keyline_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv"
+        tools:text="Description" />
+
+    <ImageView
+        android:id="@+id/star_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/keyline_7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv"
+        android:src="@drawable/ic_baseline_star_border_24" />
+
+    <TextView
+        android:id="@+id/star_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/keyline_3"
+        app:layout_constraintBottom_toBottomOf="@+id/star_image"
+        app:layout_constraintStart_toEndOf="@+id/star_image"
+        app:layout_constraintTop_toTopOf="@+id/star_image"
+        tools:text="43" />
+
+    <TextView
+        android:id="@+id/updated_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/keyline_7"
+        android:layout_marginTop="@dimen/keyline_7"
+        android:layout_marginBottom="@dimen/keyline_7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/star_count_tv"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv"
+        tools:text="Updated 15 hours ago" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
